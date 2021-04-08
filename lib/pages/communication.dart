@@ -17,7 +17,8 @@ class CommunicationWidget extends StatelessWidget {
                 ),
               ),
         ),
-      backgroundColor: Color.fromRGBO(251, 233, 224, 1),
+      //backgroundColor: Color.fromRGBO(251, 233, 224, 1),
+      backgroundColor: Color(0xFFFFF9F6),
       body:
         Row(
           children: <Widget> [
@@ -241,6 +242,5 @@ class CommunicationWidget extends StatelessWidget {
   //   ),
   // );
   
-
   }
 }

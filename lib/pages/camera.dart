@@ -625,6 +625,5 @@ class CameraWidget extends StatelessWidget {
         ]
       )
     );
-          }
-        }
-        
+  }
+}

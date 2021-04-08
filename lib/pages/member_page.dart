@@ -59,4 +59,3 @@ class MemberPage extends StatelessWidget {
     );
   }
 }
-

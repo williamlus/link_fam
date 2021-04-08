@@ -3,6 +3,7 @@ import 'package:practice_carousel/widget/nav-drawer.dart';
 import './pages/index_page.dart';
 import './pages/login.dart';
 import './pages/profile.dart';
+import './pages/helppage.dart';
 import 'dart:io';
 import 'package:flutter/foundation.dart';
 
@@ -23,8 +24,10 @@ void main() => runApp(new MaterialApp(
         '/login': (context) => LoginpageWidget(),
         '/profile': (context) => ProfileWidget(),
         '/index': (context) => IndexPage(),
+        '/help': (context) => HelpsWidget(),
       },
     ));
+
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.

@@ -26,7 +26,8 @@
                           ),
                         ),
                   ),
-                backgroundColor: Color.fromRGBO(251, 233, 224, 1),
+//                backgroundColor: Color.fromRGBO(251, 233, 224, 1),
+                backgroundColor: Color(0xFFFFF9F6),
                 body:
                   // Row(
                   //   children: <Widget> [
@@ -60,7 +61,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HelpsmallWidget()),);
+                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
                                               },//button
                                       )
                                     ),    
@@ -83,7 +84,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HelpsmallWidget()),);
+                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
                                               },//button
                                       )
                                     ),    
@@ -105,7 +106,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HelpsmallWidget()),);
+                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
                                               },//button
                                       )
                                     ),           
@@ -119,4 +120,3 @@
         //////////////////////
     }
   }
-        

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 import 'package:practice_carousel/widget/nav-drawer.dart';
 
-class HelpsmallWidget extends StatelessWidget {
+class HelpsWidget extends StatelessWidget {
           @override
           Widget build(BuildContext context) {
             return  Scaffold(
@@ -367,4 +367,3 @@ class HelpsmallWidget extends StatelessWidget {
             );
   }
 }
-        
