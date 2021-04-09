@@ -1,6 +1,7 @@
         import 'package:flutter/material.dart';
         import 'dart:math' as math;
-        //import 'package:flutter_svg/flutter_svg.dart';
+        import 'package:practice_carousel/widget/nav-drawer.dart';
+        
         
         class MainscreenWidget extends StatefulWidget {
         @override
@@ -10,57 +11,52 @@
         class _MainscreenWidgetState extends State<MainscreenWidget> {
         @override
         Widget build(BuildContext context) {
-                            return Container(
-                          width: 414,
-                          height: 896,
+            return Scaffold(
+                drawer: NavDrawer(),
+                  appBar: AppBar(
+                    title: Text('link_fam.'),
+                    backgroundColor: Color.fromRGBO(234, 218, 209, 1.0),
+                    shape: ContinuousRectangleBorder(
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(60.0),
+                        bottomRight: Radius.circular(60.0),
+                          ),
+                        ),
+                  ),
+//                backgroundColor: Color.fromRGBO(251, 233, 224, 1),
+                backgroundColor: Color(0xFFFFF9F6),
+                body:
+                  // Row(
+                  //   children: <Widget> [
+            /////////////////////////////////////////////////////////////////////////////////////////
+                  Container(
+                    width: MediaQuery.of(context).size.width*0.98,
+                    height: MediaQuery.of(context).size.height*0.98,
+                        
+                        child: Stack(
+                          children: <Widget>[
+                            Positioned(
+                              top: 0,
+                              left: 0,
+                            child: Container(
+                              width: 414,
+                              height: 224,
                           
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 0,
-                            child: Container(
-                          width: 414,
-                          height: 224.06639099121094,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 56,
                             left: 49,
                             child: Container(
                           width: 321,
-                          height: 168.06639099121094,
+                          height: 168,
                           
                           child: Stack(
                             children: <Widget>[
-                          //     Positioned(
-                          //   top: 0,
-                          //   left: 0,
-                          //   child: SvgPicture.asset(
-                          //   'assets/images/mainscreen/rectangle3.svg',
-                          //   semanticsLabel: 'rectangle3'
-                          //   )
-                            
-                          // ),
+                          
+                      // help content//////////////////////////////////
                           Positioned(
-                            top: 61,
-                            left: 19,
-                            child: Container(
-                            width: 284,
-                            height: 98,//98
-                            decoration: BoxDecoration(
-                              borderRadius : BorderRadius.only(
-                                topLeft: Radius.circular(15),
-                                topRight: Radius.circular(15),
-                                bottomLeft: Radius.circular(15),
-                                bottomRight: Radius.circular(15),
-                              ),
-                          color : Color.fromRGBO(251, 233, 224, 1),
-                      )
-                          )
-                          ),Positioned(
-                            top: 148,
+                            top: 0,
                             left: 185,
                             child: Transform.rotate(
                             angle: 1.987846675914698e-16 * (math.pi / 180),
@@ -71,7 +67,7 @@
                           ,
                           )
                           ),Positioned(
-                            top: 82,
+                            top: 32,
                             left: 59,
                             child: Text('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx', textAlign: TextAlign.center, style: TextStyle(
                             color: Color.fromRGBO(52, 59, 59, 1),
@@ -82,8 +78,8 @@
                             height: 1
                           ),)
                           ),Positioned(
-                            top: 141,
-                            left: 233,
+                            top: 52,
+                            left: 232,
                             child: Text('UserName', textAlign: TextAlign.center, style: TextStyle(
                             color: Color.fromRGBO(52, 59, 59, 1),
                             fontFamily: 'Roboto',
@@ -93,13 +89,13 @@
                             height: 1
                           ),)
                           ),Positioned(
-                            top: 143.76837158203125,
-                            left: 296.498046875,
+                            top: 64,
+                            left: 296,
                             child: Transform.rotate(
                             angle: 166.65469889200074 * (math.pi / 180),
                             child: Container(
-                            width: 33.01585006713867,
-                            height: 33.03987121582031,
+                            width: 33,
+                            height: 33,
                             decoration: BoxDecoration(
                               boxShadow : [BoxShadow(
                               color: Color.fromRGBO(0, 0, 0, 0.25),
@@ -114,7 +110,7 @@
                           ),
                           )
                           ),Positioned(
-                            top: 57,
+                            top: 47,
                             left: 20,
                             child: Container(
                             width: 34,
@@ -132,7 +128,7 @@
                       )
                           )
                           ),Positioned(
-                            top: 33,
+                            top: 23,
                             left: 0,
                             child: Container(
                             width: 84,
@@ -146,78 +142,25 @@
                           image : DecorationImage(
                               image: AssetImage('assets/images/mainscreen/Rectangle10.png'),
                               fit: BoxFit.contain
-                          ),
-                      )
-                          )
-                          ),
+                                    ),
+                                )
+                                    )
+                                    ),
                             ]
                           )
                         )
-                          ),Positioned(
-                            top: 16,
-                            left: 22,
-                            child: Container(
-                            width: 54,
-                            height: 33,
-                            decoration: BoxDecoration(
-                              color : Color.fromRGBO(196, 196, 196, 1),
-                      )
-                          )
-                          ),Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Container(
-                            width: 414,
-                            height: 72,
-                            decoration: BoxDecoration(
-                              borderRadius : BorderRadius.only(
-                                topLeft: Radius.circular(23),
-                                topRight: Radius.circular(23),
-                                bottomLeft: Radius.circular(23),
-                                bottomRight: Radius.circular(23),
-                              ),
-                          color : Color.fromRGBO(234, 217, 209, 1),
-                      )
-                          )
-                          ),Positioned(
-                            top: 22.829267501831055,
-                            left: 29,
-                            child: Transform.rotate(
-                            angle: 1.7454263438038863e-16 * (math.pi / 180),
-                            child: Divider(
-                            color: Color.fromRGBO(224, 240, 239, 1),
-                            thickness: 3
-                          )
-                          ,
-                          )
-                          ),Positioned(
-                            top: 36,
-                            left: 29,
-                            child: Transform.rotate(
-                            angle: 1.7454263438038863e-16 * (math.pi / 180),
-                            child: Divider(
-                            color: Color.fromRGBO(224, 240, 239, 1),
-                            thickness: 3
-                          )
-                          ,
-                          )
-                          ),Positioned(
-                            top: 49.17073059082031,
-                            left: 29,
-                            child: Transform.rotate(
-                            angle: 1.7454263438038863e-16 * (math.pi / 180),
-                            child: Divider(
-                            color: Color.fromRGBO(224, 240, 239, 1),
-                            thickness: 3
-                          )
-                          ,
-                          )
                           ),
-                            ]
-                          )
-                        )
-                          ),Positioned(
-                            top: 242,
+                          
+                          
+                          /////////////////////////////////////////////////////////////////////////
+                                ]
+                              )
+                            )
+                          ),
+                          /////////////////////////////////////////////////////////////////////////
+                          ////time table 
+                          Positioned(
+                            top: 92,
                             left: 21,
                             child: Container(
                           width: 371,
@@ -231,7 +174,7 @@
                             child: Container(
                           width: 371,
                           height: 516,
-                          
+                          /////rectangle table background
                           child: Stack(
                             children: <Widget>[
                               Positioned(
@@ -290,7 +233,9 @@
                               color : Color.fromRGBO(237, 244, 243, 1),
                       )
                           )
-                          ),Positioned(
+                          ),
+                          ///table text
+                          Positioned(
                             top: 88,
                             left: 75,
                             child: Text('9 am Work', textAlign: TextAlign.center, style: TextStyle(
@@ -367,27 +312,31 @@
                             fontWeight: FontWeight.normal,
                             height: 1
                           ),)
-                          ),Positioned(
+                          ),
+                          
+                          //////////////time table weekday//
+                           //timetable mon
+                          Positioned(
                             top: 77,
                             left: 0,
                             child: Container(
-                          width: 53,
-                          height: 422,
+                              width: 53,
+                              height: 422,    
+
+                              child: Stack(
+                                children: <Widget>[
+                                  Positioned(
+                                top: 0,
+                                left: 0,
+                                child: Container(
+                              width: 53,
+                              height: 38,
                           
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 0,
-                            child: Container(
-                          width: 53,
-                          height: 38,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -404,7 +353,8 @@
                       )
                           ),
                           )
-                          ),Positioned(
+                          ),
+                          Positioned(
                             top: 11,
                             left: 0,
                             child: Text('Mon', textAlign: TextAlign.center, style: TextStyle(
@@ -419,18 +369,21 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          
+                          //timetable tue
+                          Positioned(
                             top: 64,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //tue oval
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -462,18 +415,20 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          //timetable wed
+                          Positioned(
                             top: 128,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //wed oval
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -505,18 +460,20 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          //timetable thursday
+                          Positioned(
                             top: 192,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //thur oval
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -548,18 +505,20 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          //timetable friday
+                          Positioned(
                             top: 256,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //oval friday
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -591,18 +550,21 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          
+                          //timetable saturday
+                          Positioned(
                             top: 320,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //sat oval
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -634,18 +596,20 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          //timetable sunday
+                          Positioned(
                             top: 384,
                             left: 0,
                             child: Container(
                           width: 53,
                           height: 38,
-                          
+                          //sun oval
                           child: Stack(
                             children: <Widget>[
                               Positioned(
                             top: 0,
-                            left: 46,
+                            left: 7,
                             child: Transform.rotate(
                             angle: -90 * (math.pi / 180),
                             child: Container(
@@ -685,7 +649,9 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          //title text
+                          Positioned(
                             top: 24,
                             left: 52,
                             child: Container(
@@ -746,7 +712,10 @@
                             ]
                           )
                         )
-                          ),Positioned(
+                          ),
+                          
+                          ///////bottom///////////////////////////////////////////
+                          Positioned(
                             top: 786,
                             left: 414,
                             child: Container(
@@ -755,240 +724,19 @@
                           
                           child: Stack(
                             children: <Widget>[
-                              Positioned(
-                            top: 46,
-                            left: 0,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 415,
-                            height: 64,
-                            decoration: BoxDecoration(
-                              borderRadius : BorderRadius.only(
-                                topLeft: Radius.circular(23),
-                                topRight: Radius.circular(23),
-                                bottomLeft: Radius.circular(23),
-                                bottomRight: Radius.circular(23),
-                              ),
-                          color : Color.fromRGBO(234, 217, 209, 1),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 35,
-                            left: -84.87921142578125,
-                            child: Container(
-                          width: 50.12077331542969,
-                          height: 50,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 50.12077331542969,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color : Color.fromRGBO(244, 185, 166, 1),
-                          borderRadius : BorderRadius.all(Radius.elliptical(50.12077331542969, 50)),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 2,
-                            left: -43.716766357421875,
-                            child: Transform.rotate(
-                            angle: -0.5407684512236843 * (math.pi / 180),
-                            child: Container(
-                            width: 35.61637496948242,
-                            height: 42.80842590332031,
-                            decoration: BoxDecoration(
-                              boxShadow : [BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0,4),
-                              blurRadius: 4
-                          )],
-                          image : DecorationImage(
-                              image: AssetImage('assets/images/mainscreen/Rectangle29.png'),
-                              fit: BoxFit.fitWidth
-                          ),
-                      )
-                          ),
-                          )
-                          ),
-                            ]
-                          )
-                        )
-                          ),Positioned(
-                            top: 35,
-                            left: -273.87921142578125,
-                            child: Container(
-                          width: 50.12077331542969,
-                          height: 50,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 50.12077331542969,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color : Color.fromRGBO(244, 185, 166, 1),
-                          borderRadius : BorderRadius.all(Radius.elliptical(50.12077331542969, 50)),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 0,
-                            left: -41.75752258300781,
-                            child: Transform.rotate(
-                            angle: -0.6017232388982466 * (math.pi / 180),
-                            child: Container(
-                            width: 33.64706802368164,
-                            height: 42.827762603759766,
-                            decoration: BoxDecoration(
-                              image : DecorationImage(
-                              image: AssetImage('assets/images/mainscreen/Rectangle29.png'),
-                              fit: BoxFit.fitWidth
-                          ),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 3.1472015380859375,
-                            left: -9.226486206054688,
-                            child: Transform.rotate(
-                            angle: 179.42731885800643 * (math.pi / 180),
-                            child: Container(
-                            width: 31.76499366760254,
-                            height: 42.82772445678711,
-                            decoration: BoxDecoration(
-                              boxShadow : [BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0,4),
-                              blurRadius: 4
-                          )],
-                          image : DecorationImage(
-                              image: AssetImage('assets/images/mainscreen/Rectangle30.png'),
-                              fit: BoxFit.fitWidth
-                          ),
-                      )
-                          ),
-                          )
-                          ),
-                            ]
-                          )
-                        )
-                          ),Positioned(
-                            top: 35,
-                            left: -12.87921142578125,
-                            child: Container(
-                          width: 50.12079620361328,
-                          height: 50,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 50.12077331542969,
-                            height: 50,
-                            decoration: BoxDecoration(
-                              color : Color.fromRGBO(245, 185, 167, 1),
-                          borderRadius : BorderRadius.all(Radius.elliptical(50.12077331542969, 50)),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 11.599838256835938,
-                            left: -1.540313720703125,
-                            child: Transform.rotate(
-                            angle: 179.2877191921194 * (math.pi / 180),
-                            child: Container(
-                            width: 48.25239181518555,
-                            height: 26.692699432373047,
-                            decoration: BoxDecoration(
-                              boxShadow : [BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0,4),
-                              blurRadius: 4
-                          )],
-                          image : DecorationImage(
-                              image: AssetImage('assets/images/mainscreen/Rectangle28.png'),
-                              fit: BoxFit.fitWidth
-                          ),
-                      )
-                          ),
-                          )
-                          ),
-                            ]
-                          )
-                        )
-                          ),Positioned(
-                            top: 0,
-                            left: -156.77053833007812,
-                            child: Container(
-                          width: 95.2294692993164,
-                          height: 92,
-                          
-                          child: Stack(
-                            children: <Widget>[
-                              Positioned(
-                            top: 0,
-                            left: 0,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 95.2294692993164,
-                            height: 92,
-                            decoration: BoxDecoration(
-                              color : Color.fromRGBO(243, 161, 136, 1),
-                          borderRadius : BorderRadius.all(Radius.elliptical(95.2294692993164, 92)),
-                      )
-                          ),
-                          )
-                          ),Positioned(
-                            top: 16,
-                            left: -14.0338134765625,
-                            child: Transform.rotate(
-                            angle: -180 * (math.pi / 180),
-                            child: Container(
-                            width: 67.16183471679688,
-                            height: 60,
-                            decoration: BoxDecoration(
-                              boxShadow : [BoxShadow(
-                              color: Color.fromRGBO(0, 0, 0, 0.25),
-                              offset: Offset(0,4),
-                              blurRadius: 4
-                          )],
-                          image : DecorationImage(
-                              image: AssetImage('assets/images/mainscreen/Rectangle27.png'),
-                              fit: BoxFit.fitWidth
-                          ),
-                      )
-                          ),
-                          )
-                          ),
+                     
                             ]
                           )
                         )
                           ),
+                        //     ]
+                        //   )
+                        // )
+                         // ),
                             ]
                           )
-                        )
-                          ),
-                            ]
-                          )
-                        );
+                      )
+                    
+    );
   }
 }

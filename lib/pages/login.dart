@@ -1,7 +1,7 @@
   import 'package:flutter/material.dart';
-  import 'dart:math' as math;
   import './profile.dart';
   import 'login_input.dart';
+
   class LoginpageWidget extends StatefulWidget {
   @override
   _LoginpageWidgetState createState() => _LoginpageWidgetState();
@@ -15,11 +15,12 @@
       body:
         Container(
 
-        width: MediaQuery.of(context).size.width*0.8,//414.0000305175781,
-        height: MediaQuery.of(context).size.height*0.8,//896.0000610351562,
+        width: MediaQuery.of(context).size.width*0.98,//414.0000305175781,
+        height: MediaQuery.of(context).size.height*0.98,//896.0000610351562,
         
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
           
             

@@ -42,6 +42,7 @@ class ProfileWidget extends StatelessWidget {
         
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
           
           Row(  

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
 import './pages/index_page.dart';
 import './pages/login.dart';
 import './pages/profile.dart';
