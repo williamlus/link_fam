@@ -5,6 +5,7 @@ import 'main_screen.dart';
 import 'newrequest.dart';
 import 'community.dart';
 import 'communication.dart';
+import 'chat.dart';
 
 class IndexPage extends StatefulWidget {
   @override
@@ -24,7 +25,7 @@ class _IndexPageState extends State<IndexPage> {
       backgroundColor: Color.fromRGBO(234, 218, 209, 1.0)
     ),
     BottomNavigationBarItem(
-      icon: Icon(CupertinoIcons.heart_slash_circle),
+      icon: Icon(Icons.volunteer_activism),
       label: ('援助'),
       backgroundColor: Color.fromRGBO(234, 218, 209, 1.0)
     ),
@@ -42,7 +43,7 @@ class _IndexPageState extends State<IndexPage> {
 
   final List tabBodies = [
     MainscreenWidget(),
-    CommunicationWidget(),
+    ChatWidget(),//CommunicationWidget(),
     NewrequestWidget(),
     CameraWidget(),
     CommunitysearchWidget()

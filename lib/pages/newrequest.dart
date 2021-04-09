@@ -1,6 +1,7 @@
         import 'package:flutter/material.dart';
-        import 'package:practice_carousel/widget/nav-drawer.dart';
+        import '../widget/nav-drawer.dart';
         import 'helppage.dart';
+        import 'viewhelperpage.dart';
 
         class NewrequestWidget extends StatefulWidget {
         @override
@@ -33,7 +34,7 @@
                   //   children: <Widget> [
             /////////////////////////////////////////////////////////////////////////////////////////
                     Container(
-                      width: MediaQuery.of(context).size.width*0.8,//414.0000305175781,
+                      width: MediaQuery.of(context).size.width*0.98,//414.0000305175781,
                       height: MediaQuery.of(context).size.height*0.8,//896.0000610351562,
                       
                       child: Column(
@@ -72,7 +73,7 @@
                               minWidth: MediaQuery.of(context).size.width*0.5,
                               height: MediaQuery.of(context).size.height*0.2,
                               child: ElevatedButton(
-                                child: Text('Add New Activity', textAlign: TextAlign.center) ,
+                                child: Text('Search Helper', textAlign: TextAlign.center) ,
                                 style: ElevatedButton.styleFrom(
                                       primary: Color(0xFFF7DDBF),//Color.fromRGBO(74, 82, 81, 1),
                                       padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
@@ -84,7 +85,7 @@
                                 onPressed: () {
                                   Navigator.push(
                                     context,
-                                    MaterialPageRoute(builder: (context) => HelpsWidget()),);
+                                    MaterialPageRoute(builder: (context) => ViewHelpsWidget()),);
                                               },//button
                                       )
                                     ),    

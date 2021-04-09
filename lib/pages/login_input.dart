@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
+import '../widget/nav-drawer.dart';
 import 'index_page.dart';
 import 'main_screen.dart';
 
@@ -24,7 +24,7 @@ class LoginInputPage extends StatelessWidget {
                   TextField(
                     decoration: InputDecoration(
                       icon: Icon(Icons.person),
-                      hasFloatingPlaceholder: false,
+                      //hasFloatingPlaceholder: false,
                       labelText: "Login Name",
                       helperText: "",
                       errorText: "",
@@ -47,7 +47,7 @@ class LoginInputPage extends StatelessWidget {
                       child: ElevatedButton(
                         child: Text('save', textAlign: TextAlign.center) ,
                         style: ElevatedButton.styleFrom(
-                              primary: Color(0xFFE5FAFB),//Color.fromRGBO(228, 251, 249, 1),
+                              primary: Color.fromRGBO(161, 188, 186, 1),//Color(0xFFE5FAFB),//Color.fromRGBO(228, 251, 249, 1),
                               padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
                               textStyle: TextStyle(
                                   fontSize: 30,

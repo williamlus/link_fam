@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../pages/login.dart';
 import '../pages/profile.dart';
+import '../pages/signup.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -46,8 +47,11 @@ class NavDrawer extends StatelessWidget {
           ),
           ListTile(
             leading: Icon(Icons.border_color),
-            title: Text('Feedback'),
-            onTap: () => {Navigator.of(context).pop()},
+            title: Text('Signup'),
+            onTap: () => {
+              Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SignupPage()))
+            },
           ),
           ListTile(
             leading: Icon(Icons.exit_to_app),

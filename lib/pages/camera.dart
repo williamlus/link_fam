@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
-import 'dart:math' as math;
+import '../widget/nav-drawer.dart';
+
 
 class CameraWidget extends StatelessWidget {
           @override
@@ -23,7 +23,7 @@ class CameraWidget extends StatelessWidget {
                 body:
             /////////////////////////////////////////////////////////////////////////////////////////
                     Container(
-                      width: MediaQuery.of(context).size.width*0.8,//414.0000305175781,
+                      width: MediaQuery.of(context).size.width*0.98,//414.0000305175781,
                       height: MediaQuery.of(context).size.height*0.8,//896.0000610351562,
       
                             child: Stack(

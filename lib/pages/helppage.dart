@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
+import '../widget/nav-drawer.dart';
 
 class HelpsWidget extends StatelessWidget {
           @override
@@ -25,6 +25,7 @@ class HelpsWidget extends StatelessWidget {
             /////////////////////////////////////////////////////////////////////////////////////////
             ///           
                           //help/////////////////////////////////////////////////  
+                          
                           Container(
                                         // top: MediaQuery.of(context).size.height*0.1,
                                         // left: MediaQuery.of(context).size.width*0.2,

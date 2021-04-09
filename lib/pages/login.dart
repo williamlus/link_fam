@@ -1,6 +1,7 @@
   import 'package:flutter/material.dart';
   import './profile.dart';
   import 'login_input.dart';
+  import 'signup.dart';
 
   class LoginpageWidget extends StatefulWidget {
   @override
@@ -92,7 +93,7 @@
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProfileWidget()),
+                MaterialPageRoute(builder: (context) => SignupPage()),
                     );
                   },
                 )

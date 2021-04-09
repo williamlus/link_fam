@@ -25,7 +25,7 @@ void paint( Size size) {
   }
 
 class ProfileWidget extends StatelessWidget {
-      Offset _offset=Offset(200,0) ;
+      final Offset _offset=Offset(200,0) ;
       
       
           @override
@@ -72,22 +72,38 @@ class ProfileWidget extends StatelessWidget {
                         ),
                       )
                     ),
+              
             ]
           ),
-          
           Row(
             // mainAxisAlignment: MainAxisAlignment.start,
-            
             //crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              
-            Container(
-            child: Text('Member Lv 2', textAlign: TextAlign.right) 
-            ),
-            CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.1,0),(Offset(_offsetwidth*0.2,0)),Colors.amber)),
-            CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.2,0),(Offset(_offsetwidth*0.6,0)),Colors.grey)),
-            
-            ],
+              Container(
+                    child: Stack(
+                      children: <Widget>[
+                      Text('Requestor Lv 2', textAlign: TextAlign.right) ,
+                      CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.1,0),(Offset(_offsetwidth*0.2,0)),Colors.amber)),
+                      CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.2,0),(Offset(_offsetwidth*0.6,0)),Colors.grey)),
+                      ]
+                  )
+              ),
+            ]
+          ),
+          Row(
+            // mainAxisAlignment: MainAxisAlignment.start,
+            //crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                    child: Stack(
+                      children: <Widget>[
+                      Text('Helper Lv 2', textAlign: TextAlign.right) ,
+                      CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.1,0),(Offset(_offsetwidth*0.2,0)),Colors.amber)),
+                      CustomPaint(foregroundPainter: LinePainter(Offset(_offsetwidth*0.2,0),(Offset(_offsetwidth*0.6,0)),Colors.grey)),
+                      ]
+                  )
+              ),
+            ]
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
@@ -101,19 +117,23 @@ class ProfileWidget extends StatelessWidget {
             ],
           ),
           
-
-          Column(
-          // mainAxisAlignment: MainAxisAlignment.start,
-          children: <Widget>[
-              Text('Location'),
-              Text('Contact Detail'),
-              Text('Family Members'),
-              Text(' '),
-              Text('Phone Authorization'),
-              Text('ID card binding'),
-              Text('Settings'),]
-          ),
-
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.start,
+          //   //crossAxisAlignment: CrossAxisAlignment.center,
+          //   children: <Widget>[
+            Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: <Widget>[
+                Text('Location', textAlign: TextAlign.left),
+                Text('Contact Detail', textAlign: TextAlign.left),
+                Text('Family Members', textAlign: TextAlign.left),
+                Text(' ', textAlign: TextAlign.left),
+                Text('Phone Authorization', textAlign: TextAlign.left),
+                Text('ID card binding', textAlign: TextAlign.left),
+                Text('Settings', textAlign: TextAlign.left),]
+              ),
+          //   ]
+          // ),
           ButtonTheme(
             minWidth: MediaQuery.of(context).size.width*0.5,
             height: MediaQuery.of(context).size.height*0.2,

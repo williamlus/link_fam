@@ -1,6 +1,6 @@
         import 'package:flutter/material.dart';
         import 'dart:math' as math;
-        import 'package:practice_carousel/widget/nav-drawer.dart';
+        import '../widget/nav-drawer.dart';
         
         
         class MainscreenWidget extends StatefulWidget {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
+import '../widget/nav-drawer.dart';
 
 class MemberPage extends StatelessWidget {
   @override

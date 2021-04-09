@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math' as math;
-import 'package:practice_carousel/widget/nav-drawer.dart';
+import '../widget/nav-drawer.dart';
 
 class CommunitysearchWidget extends StatelessWidget {
           @override
@@ -24,7 +24,7 @@ class CommunitysearchWidget extends StatelessWidget {
                   
             /////////////////////////////////////////////////////////////////////////////////////////
                     Container(
-                      width: MediaQuery.of(context).size.width*0.8,//414.0000305175781,
+                      width: MediaQuery.of(context).size.width*0.98,//414.0000305175781,
                       height: MediaQuery.of(context).size.height*0.8,//896.0000610351562,
                   
                            child: Stack(
@@ -342,7 +342,7 @@ class CommunitysearchWidget extends StatelessWidget {
                                   ),)
                                   ),Positioned(
                                     top: 15,
-                                    left: 88.64611053466797,
+                                    left: 88,
                                     child: Text('XXXXXX', textAlign: TextAlign.center, style: TextStyle(
                                     color: Color.fromRGBO(52, 59, 59, 1),
                                     fontFamily: 'Roboto',

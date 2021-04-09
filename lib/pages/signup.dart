@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:practice_carousel/widget/nav-drawer.dart';
+import 'package:practice_carousel/pages/index_page.dart';
+import '../widget/nav-drawer.dart';
 import 'profile.dart';
 
 class SignupPage extends StatelessWidget {
@@ -13,6 +14,8 @@ class SignupPage extends StatelessWidget {
       ),
       body:
       Container(
+          width: MediaQuery.of(context).size.width*0.98,
+          height: MediaQuery.of(context).size.height*0.8,
           child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -21,7 +24,7 @@ class SignupPage extends StatelessWidget {
                   TextField(
                     decoration: InputDecoration(
                       icon: Icon(Icons.person),
-                      hasFloatingPlaceholder: false,
+                      //hasFloatingPlaceholder: false,
                       labelText: "Name",
                       helperText: "",
                       errorText: "",
@@ -78,7 +81,7 @@ class SignupPage extends StatelessWidget {
                         onPressed: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => ProfileWidget()),
+                            MaterialPageRoute(builder: (context) => IndexPage()),
                             );},
                       )
                   ),
