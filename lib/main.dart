@@ -4,8 +4,7 @@ import './pages/index_page.dart';
 import './pages/login.dart';
 import './pages/profile.dart';
 import './pages/helppage.dart';
-import 'dart:io';
-import 'package:flutter/foundation.dart';
+import './pages/main_screen.dart';
 
 
 // void main() {
@@ -23,6 +22,7 @@ void main() => runApp(new MaterialApp(
         '/': (context) => LoginpageWidget(),
         '/login': (context) => LoginpageWidget(),
         '/profile': (context) => ProfileWidget(),
+        '/mainscreen': (context) => MainscreenWidget(),
         '/index': (context) => IndexPage(),
         '/help': (context) => HelpsWidget(),
       },

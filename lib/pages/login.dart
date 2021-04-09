@@ -1,6 +1,7 @@
   import 'package:flutter/material.dart';
   import 'dart:math' as math;
   import './profile.dart';
+  import 'login_input.dart';
   class LoginpageWidget extends StatefulWidget {
   @override
   _LoginpageWidgetState createState() => _LoginpageWidgetState();
@@ -65,7 +66,7 @@
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ProfileWidget()),
+                MaterialPageRoute(builder: (context) => LoginInputPage()),
                     );
                   },//button
                 )

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 import './index_page.dart';
+import './main_screen.dart';
 
 void paint( Size size) {
     Canvas canvas;

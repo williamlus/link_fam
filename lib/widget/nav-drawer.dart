@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import '../pages/login.dart';
+import '../pages/profile.dart';
 
 class NavDrawer extends StatelessWidget {
   @override
@@ -21,12 +23,21 @@ class NavDrawer extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.input),
             title: Text('Welcome'),
-            onTap: () => {},
+            onTap: () => {
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => LoginpageWidget()))
+            },
+
           ),
           ListTile(
             leading: Icon(Icons.verified_user),
             title: Text('Profile'),
-            onTap: () => {Navigator.of(context).pop()},
+            onTap: () => {
+              Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => ProfileWidget()))
+            },
           ),
           ListTile(
             leading: Icon(Icons.settings),

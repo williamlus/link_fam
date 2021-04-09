@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'camera.dart';
 import 'main_screen.dart';
-import 'member_page.dart';
 import 'newrequest.dart';
 import 'community.dart';
 import 'communication.dart';
@@ -21,7 +20,7 @@ class _IndexPageState extends State<IndexPage> {
     ),
     BottomNavigationBarItem(
       icon: Icon(CupertinoIcons.search),
-      label: '聊天',
+      label: '助手聊天',
       backgroundColor: Color.fromRGBO(234, 218, 209, 1.0)
     ),
     BottomNavigationBarItem(
@@ -36,7 +35,7 @@ class _IndexPageState extends State<IndexPage> {
     ),
     BottomNavigationBarItem(
       icon: Icon(CupertinoIcons.profile_circled),
-      label: ('會員中心'),
+      label: ('會員討論區'),
       backgroundColor: Color.fromRGBO(234, 218, 209, 1.0)
     )
   ];
